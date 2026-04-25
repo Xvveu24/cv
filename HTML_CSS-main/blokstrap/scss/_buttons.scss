@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacer-sm $spacer-lg;
+    font-size: $font-size-base;
+    font-weight: bold;
+    border: none;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    transition: background $transition, transform $transition, box-shadow $transition;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: $shadow-hover;
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.btn-buy {
+    @extend .btn;
+    background: $success;
+    color: #fff;
+
+    &:hover {
+        background: darken($success, 10%);
+    }
+}
+
+.btn-cancel {
+    @extend .btn;
+    background: $danger;
+    color: #fff;
+
+    &:hover {
+        background: darken($danger, 10%);
+    }
+}
+
+.btn-info {
+    @extend .btn;
+    background: $primary;
+    color: #fff;
+
+    &:hover {
+        background: darken($primary, 10%);
+    }
+}

@@ -1,0 +1,177 @@
+/* === compiled from main.scss === */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    background: #f0f2f5;
+    color: #333;
+    padding: 24px;
+}
+
+/* --- .btn base + @extend variants --- */
+
+.btn,
+.btn-buy,
+.btn-cancel,
+.btn-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn-buy:hover,
+.btn-cancel:hover,
+.btn-info:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
+}
+
+.btn:active,
+.btn-buy:active,
+.btn-cancel:active,
+.btn-info:active {
+    transform: translateY(0);
+}
+
+.btn-buy {
+    background: #43a047;
+    color: #fff;
+}
+
+.btn-buy:hover {
+    background: #338a3e;
+}
+
+.btn-cancel {
+    background: #e53935;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background: #c62828;
+}
+
+.btn-info {
+    background: #3949ab;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background: #283593;
+}
+
+/* --- product-card (nesting) --- */
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 240px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
+    transform: translateY(-4px);
+}
+
+.product-card__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card__body {
+    padding: 15px;
+}
+
+.product-card__title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.product-card__title:hover {
+    color: #3949ab;
+}
+
+.product-card__price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #43a047;
+    margin-bottom: 15px;
+}
+
+.product-card__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+/* --- demo layout --- */
+
+.demo-section {
+    margin-bottom: 48px;
+}
+
+.demo-section h2 {
+    font-size: 18px;
+    color: #546e7a;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* --- glassmorphism mixin result --- */
+
+.glass-demo {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 24px;
+    background-color: rgba(57, 73, 171, 0.35);
+    color: white;
+    font-size: 15px;
+    max-width: 320px;
+}

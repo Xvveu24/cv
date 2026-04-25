@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="demo-section">
+        <h2>@extend</h2>
+        <div class="btn-row">
+            <button class="btn-buy">Buy</button>
+            <button class="btn-cancel">Cancel</button>
+            <button class="btn-info">Info</button>
+            <button class="btn">Base btn</button>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Product Cards — nesting</h2>
+        <div class="cards-row">
+
+            <div class="product-card">
+                <img class="product-card__img"
+                    src="./pz-vertical-dial-silicone-strap-praizy-men-original-imahbt4ze6fsqvte.webp" alt="Watch">
+                <div class="product-card__body">
+                    <div class="product-card__title">Premium Watch</div>
+                    <div class="product-card__price">$149</div>
+                    <div class="product-card__actions">
+                        <button class="btn-buy">Buy</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-card__img" src="./prfumset.webp" alt="Perfume">
+                <div class="product-card__body">
+                    <div class="product-card__title">Perfume Set</div>
+                    <div class="product-card__price">$89</div>
+                    <div class="product-card__actions">
+                        <button class="btn-buy">Buy</button>
+                        <button class="btn-info">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-card__img" src="./runin.jpg" alt="Sneakers">
+                <div class="product-card__body">
+                    <div class="product-card__title">Running Shoes</div>
+                    <div class="product-card__price">$210</div>
+                    <div class="product-card__actions">
+                        <button class="btn-buy">Buy</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Glassmorphism — @mixin glass()</h2>
+        <div style="background: linear-gradient(135deg, #3949ab, #e53935); padding: 32px; border-radius: 12px; display: inline-block;">
+            <div class="glass-demo">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur voluptas, et temporibus adipisci
+                amet harum laudantium reiciendis. Dolorum ut, minima enim quam incidunt cupiditate quos aspernatur odio
+                eligendi consequuntur!
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

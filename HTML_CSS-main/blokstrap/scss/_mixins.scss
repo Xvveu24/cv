@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+@mixin flex-center($direction: row, $gap: $spacer) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+}
+
+@mixin glass($blur: 12px, $opacity: 0.15) {
+    background: rgba(255, 255, 255, $opacity);
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@mixin respond-to($bp) {
+    @if $bp == mobile {
+        @media (max-width: 600px) { @content; }
+    } @else if $bp == tablet {
+        @media (max-width: 900px) { @content; }
+    }
+}

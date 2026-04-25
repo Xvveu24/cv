@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'buttons';
+@use 'cards';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-base;
+    font-size: $font-size-base;
+    background: #f0f2f5;
+    color: #333;
+    padding: $spacer-lg;
+}
+
+.demo-section {
+    margin-bottom: $spacer-lg * 2;
+
+    h2 {
+        font-size: 18px;
+        color: $secondary;
+        margin-bottom: $spacer;
+        padding-bottom: $spacer-sm;
+        border-bottom: 2px solid #e0e0e0;
+    }
+}
+
+.btn-row {
+    @include flex-center(row, $spacer-sm);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards-row {
+    @include flex-center(row, $spacer-lg);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.glass-demo {
+    @include glass();
+    border-radius: $radius;
+    padding: $spacer-lg;
+    background-color: rgba($primary, 0.35);
+    color: white;
+    font-size: 15px;
+    max-width: 320px;
+}

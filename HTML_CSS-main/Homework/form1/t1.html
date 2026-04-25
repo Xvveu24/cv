@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background: #e8eef2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+        background: #b8cdd6;
+        border-radius: 8px;
+        padding: 30px;
+        width: 600px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .card-form {
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .form-header {
+        background: #e07030;
+        color: white;
+        padding: 14px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .form-body {
+        padding: 24px 20px;
+    }
+
+    .field-group {
+        margin-bottom: 18px;
+    }
+
+    .field-label {
+        font-size: 12px;
+        color: #999;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .field-input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 6px 0;
+        font-size: 14px;
+        color: #555;
+        outline: none;
+    }
+
+    .field-input::placeholder {
+        color: #bbb;
+    }
+
+    .row-inputs {
+        display: flex;
+        gap: 16px;
+    }
+
+    .row-inputs .field-group {
+        flex: 1;
+    }
+
+    .illustration {
+        width: 120px;
+        flex-shrink: 0;
+    }
+
+    .illustration img {
+        width: 100%;
+    }
+
+    .ilus-svg {
+        width: 120px;
+        height: 120px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card-form">
+            <div class="form-header">Credit Card Details</div>
+            <div class="form-body">
+                <div class="field-group">
+                    <label class="field-label">Card Number</label>
+                    <input class="field-input" type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Name On Card</label>
+                    <input class="field-input" type="text" placeholder="Name Surname">
+                </div>
+                <div class="row-inputs">
+                    <div class="field-group">
+                        <label class="field-label">Expire Date</label>
+                        <input class="field-input" type="text" placeholder="02" style="width:60px">
+                    </div>
+                    <div class="field-group" style="padding-top:18px">
+                        <input class="field-input" type="text" placeholder="2017" style="width:70px">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">CSV No.</label>
+                        <input class="field-input" type="password" placeholder="***" maxlength="3" style="width:60px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+</body>
+</html>

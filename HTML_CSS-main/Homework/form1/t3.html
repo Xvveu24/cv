@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    background:#f5f5f5;
+    font-family:Arial;
+    padding:30px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:#fff;
+    padding:25px;
+}
+
+.title{
+    margin-bottom:15px;
+    color:#555;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+    margin-bottom:12px;
+    border-bottom:1px solid #ddd;
+    padding:6px 0;
+}
+
+input,select{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:14px;
+}
+
+.grid{
+    display:flex;
+    gap:20px;
+}
+
+.col{
+    flex:1;
+}
+
+.bottom{
+    margin-top:15px;
+}
+
+.btn{
+    margin-top:15px;
+    background:#007b7b;
+    color:#fff;
+    border:none;
+    padding:10px;
+    width:100%;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="grid">
+
+        <!-- LEFT -->
+        <div class="col">
+            <div class="title">Registration</div>
+
+            <div class="row"><input placeholder="Username"></div>
+            <div class="row"><input placeholder="Email"></div>
+            <div class="row"><input type="password" placeholder="Password"></div>
+            <div class="row"><input type="password" placeholder="Confirm"></div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col">
+            <div class="title">Personal</div>
+
+            <div class="row">
+                <input placeholder="First name">
+            </div>
+
+            <div class="row">
+                <input placeholder="Last name">
+            </div>
+
+            <div class="row">
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <input type="date">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <label><input type="checkbox"> News</label><br>
+        <label><input type="checkbox"> Terms</label>
+    </div>
+
+    <button class="btn">Submit</button>
+
+</div>
+
+</body>
+</html>

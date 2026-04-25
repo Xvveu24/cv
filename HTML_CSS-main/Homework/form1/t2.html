@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Library Demo</title>
+    <link rel="stylesheet" href="forms-lib.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        background: #f0f0f0;
+        font-family: Arial, sans-serif;
+        padding: 30px;
+    }
+
+    .demo-card {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 14px;
+        color: #333;
+    }
+
+    .demo-section {
+        margin-bottom: 28px;
+        border: 0px 0px 0px;
+    }
+
+    .demo-row {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+</style>
+
+</head>
+<body>
+    <div class="demo-card">
+    <div class="demo-section">
+        <div class="section-title">Inputs</div>
+        <div class="demo-row">
+            <input class="input-base" type="text" placeholder="Enter some text">
+            <input class="input-valid" type="text" value="valid text">
+            <input class="input-invalid" type="text" value="invalid text">
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <div class="section-title">Check boxes</div>
+        <div class="demo-row">
+            <label class="checkbox-wrap">
+                <input type="checkbox" checked>
+                <span class="checkbox-custom"></span>
+                Subscribe
+            </label>
+            <label class="checkbox-wrap">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                Subscribe
+            </label>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <div class="section-title">Radio buttons</div>
+        <div class="demo-row">
+            <span style="font-size:14px;color:#444;">Gender:</span>
+            <label class="radio-wrap">
+                <input type="radio" name="gender" checked>
+                <span class="radio-custom"></span>
+                Male
+            </label>
+            <label class="radio-wrap">
+                <input type="radio" name="gender">
+                <span class="radio-custom"></span>
+                Female
+            </label>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <div class="section-title">Buttons</div>
+        <div class="demo-row">
+            <button class="btn btn-green">Active</button>
+            <button class="btn btn-green" style="background:#388e3c">Hover</button>
+            <button class="btn btn-red">Danger</button>
+            <button class="btn btn-red" style="background:#b71c1c">Hover</button>
+            <button class="btn btn-disabled">Disabled</button>
+            <button class="btn-round btn-round-green">+</button>
+            <button class="btn-round btn-round-red">−</button>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <div class="section-title">Text area</div>
+        <textarea class="textarea-base" style="width:100%" placeholder="Enter some text..."></textarea>
+    </div>
+
+</div>
+
+</body>
+</html>

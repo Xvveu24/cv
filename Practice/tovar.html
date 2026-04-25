@@ -9,24 +9,16 @@
 
         img {
             width: 60%;
-            
-            
-            /* float: left; */
-         
+            display: block;
+            margin: 12px auto;
         }
 
-            
-
-           
-        
         body{
             background-color: #111;
-            
-            
         }
+
         ul{
             list-style-type:none;
-           
             overflow: hidden;
             background-color: #333;
             border-radius: 6px;
@@ -50,31 +42,65 @@
 
         .store{
             text-align: center;
-            
             justify-content: center;
             align-items: center;
 
+            background-color: #111;
             border: 5px solid white;
-            width: 225px;
-            padding: 10px;
+            width: 165px;           /* ще менші картки */
+            padding: 14px 10px;
             margin: 10px;
-            
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .store:hover {
+            transform: scale(1.06);
         }
 
         p{
             color: white;
-            margin-top: 10px;
+            margin-top: 8px;
+            line-height: 1.4;
+            font-size: 0.93rem;
         }
 
         h1{
             color:white;
-            margin-top: 10px;
+            margin-top: 12px;
+            font-size: 1.35rem;
         }
 
         .catalog{
             display: flex;
-            
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1400px;      /* тепер легко влазить 7-8 карток в ряд */
+            margin: 30px auto;
+        }
 
+        .price {
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 16px 0 10px;
+        }
+
+        .buy-btn {
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            padding: 12px 22px;
+            font-size: 1.05rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .buy-btn:hover {
+            background-color: white;
+            color: #111;
         }
     </style>
 </head>
@@ -89,35 +115,75 @@
         <li>Lorem</li>
         <li>Lorem</li>
         <li>Lorem</li>
-
     </ul>
+
 <div class="catalog">
- <div class="store">
-        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
-</div>
 
  <div class="store">
         <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
 </div>
 
  <div class="store">
         <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
+</div>
+
+ <div class="store">
+        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
+        <h1>Назва товару</h1>
+        <p>Короткий опис товару</p>
+        <p class="price"><u>1000 грн</u></p>
+        <button class="buy-btn">Купити</button>
 </div>
 
 </div>
 
-
-    
-
-    
 </body>
 </html>

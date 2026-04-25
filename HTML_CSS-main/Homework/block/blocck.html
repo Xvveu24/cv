@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 78px;
+            background: #2c2c2c;
+            color: #fff;
+            transition: width 0.2s ease-out;
+            overflow: hidden;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 3px 0 15px rgba(0,0,0,0.3);
+        }
+
+        .side-menu:hover {
+            width: 260px;
+            filter: brightness(1.08);
+        }
+
+        .menu-title {
+            padding: 28px 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #444;
+            white-space: nowrap;
+        }
+
+        .side-menu ul {
+            list-style: none;
+            flex-grow: 1;
+            padding: 15px 0;
+        }
+
+        .side-menu li {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-out;
+            white-space: nowrap;
+        }
+
+        .side-menu li:hover {
+            background-color: #3f3f3f;
+        }
+
+        .menu-icon {
+            font-size: 28px;
+            width: 40px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .menu-text {
+            margin-left: 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .side-menu:hover .menu-text {
+            opacity: 1;
+        }
+
+        .main-content {
+            margin-left: 78px;
+            padding: 40px 60px;
+            max-width: 920px;
+            min-height: 200vh;
+        }
+
+        .main-content h1, .main-content h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .main-content p {
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="side-menu">
+        <div class="menu-title">MENU</div>
+        <ul>
+            <li>
+                <span class="menu-icon" style="color:#f39c12;">✏️</span>
+                <span class="menu-text">EDIT</span>
+            </li>
+            <li>
+                <span class="menu-icon" style="color:#e74c3c;">❤️</span>
+                <span class="menu-text">FAVORITES</span>
+            </li>
+            <li>
+                <span class="menu-icon" style="color:#3498db;">🕒</span>
+                <span class="menu-text">HISTORY</span>
+            </li>
+            <li>
+                <span class="menu-icon" style="color:#2ecc71;">🛡️</span>
+                <span class="menu-text">SECURITY</span>
+            </li>
+            <li>
+                <span class="menu-icon" style="color:#95a5a6;">⚙️</span>
+                <span class="menu-text">SETTINGS</span>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <h1>WHAT IS LOREM IPSUM?</h1>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+        <h2>WHY DO WE USE IT?</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+        <h2>WHERE DOES IT COME FROM?</h2>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+
+        <h2>WHERE CAN I GET SOME?</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+
+</body>
+</html>

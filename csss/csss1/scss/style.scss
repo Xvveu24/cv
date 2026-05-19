@@ -1,0 +1,86 @@
+$main-color: #2f80ed;
+$text-color: #222;
+$page-bg: #f4f7fb;
+
+@mixin button-style($bg, $color, $radius) {
+  background-color: $bg;
+  color: $color;
+  border-radius: $radius;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $page-bg;
+  color: $text-color;
+}
+
+.site-header {
+  background-color: $main-color;
+  color: white;
+  padding: 24px;
+  text-align: center;
+
+  h1 {
+    margin: 0 0 18px;
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 18px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: darken(white, 20%);
+    }
+  }
+}
+
+.content {
+  background-color: white;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 24px;
+}
+
+.btn-primary {
+  @include button-style(#2f80ed, white, 8px);
+}
+
+.btn-warning {
+  @include button-style(#eb5757, white, 8px);
+}
+
+.site-footer {
+  background-color: darken($main-color, 15%);
+  color: white;
+  padding: 18px;
+  text-align: center;
+}

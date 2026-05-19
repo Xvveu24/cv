@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            outfit: ["Outfit", "sans-serif"]
+          },
+          colors: {
+            softBlue: "hsl(215, 51%, 70%)",
+            cyan: "hsl(178, 100%, 50%)",
+            mainBg: "hsl(217, 54%, 11%)",
+            cardBg: "hsl(216, 50%, 16%)",
+            lineBlue: "hsl(215, 32%, 27%)"
+          }
+        }
+      }
+    };
+  </script>
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body class="min-h-screen bg-mainBg px-6 font-outfit text-softBlue">
+  <main class="grid min-h-screen place-items-center">
+    <article class="w-full max-w-[350px] rounded-2xl bg-cardBg p-6 shadow-2xl shadow-black/25">
+      <a class="group relative block overflow-hidden rounded-lg" href="#" aria-label="View Equilibrium NFT">
+        <img class="w-full" src="./images/image-equilibrium.jpg" alt="Equilibrium NFT artwork">
+        <span class="absolute inset-0 grid place-items-center bg-cyan/50 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          <img src="./images/icon-view.svg" alt="">
+        </span>
+      </a>
+
+      <h1 class="mt-6 text-[22px] font-semibold text-white transition-colors hover:text-cyan">
+        <a href="#">Equilibrium #3429</a>
+      </h1>
+
+      <p class="mt-4 text-lg font-light leading-relaxed">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="mt-5 flex items-center justify-between">
+        <p class="flex items-center gap-2 font-semibold text-cyan">
+          <img src="./images/icon-ethereum.svg" alt="">
+          0.041 ETH
+        </p>
+
+        <p class="flex items-center gap-2">
+          <img src="./images/icon-clock.svg" alt="">
+          3 days left
+        </p>
+      </div>
+
+      <div class="mt-6 flex items-center gap-4 border-t border-lineBlue pt-4">
+        <img class="h-8 w-8 rounded-full border border-white" src="./images/image-avatar.png" alt="Jules Wyvern">
+        <p>
+          Creation of
+          <a class="text-white transition-colors hover:text-cyan" href="#">Jules Wyvern</a>
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
